@@ -30,7 +30,32 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  Answer: The statefull class components is React class. We can use render, props state, refs, context and lifecycle hook with the component. Example 
+    import React from 'react' // import the React
+    
+    class App extends React.Component {
+      constructor(){
+        super()
+        this.state = {
+          user : 'Khwanchai' //name of property value
+        }
+      }
+      render(){
+
+        <div>
+        <p> {this.state.user} <>
+        </div>
+        
+      }
+    }
+
+
 2. Describe the different phases of the component lifecycle.
+
+  Answer: 1. Initialliztion is to defind properties and the ninital state of the component. 
+              This is done in the state constructor of the component
+          2. Mounting is come after the initailization is completed. Mounting occure when the component is placed on the DOM container and the component is rendered on a webpage. the mounting phase has 2 methods:
+            componentWillMount(): This metho is called just before the compoentn is place on DOM
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
